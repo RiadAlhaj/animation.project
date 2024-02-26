@@ -1,7 +1,7 @@
 body{
   max-width: 1440px;
   width: 100%;
-  min-height: 875px;
+  min-height: 1100px;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -121,10 +121,16 @@ li a:active{
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 400;
+  transition: background-color 0.15s , color 0.15s;
 }
 .min_button:hover{
   background-color: #FFFFFF;
   color: #FE1D60;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.min_button:active{
+  background-color: #FE1D60;
+  color: #FFFFFF;
 }
 .card-container{
   max-width: 1360px;
@@ -176,4 +182,37 @@ h3{
   font-size: 16px;
   font-weight: 400;
   margin-left: 10px;
+}
+
+.footer-img{
+  max-width: 1360px;
+  width: 100%;
+  min-height: 272px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 250px;
+}
+.box-img1 , .box-img2 , .box-img3{
+  max-width: 432px;
+  width: 100%;
+  min-height: 272px;
+  height: 100%;
+}
+.japan-img{
+  max-width: 432px;
+  width: 100%;
+  min-height: 272px;
+  height: 100%;
+  animation-name: japan;
+  animation-duration: 5s;
+  animation-direction: reverse;
+  animation-fill-mode: none;
+}
+@keyframes japan{
+  form{
+    transform: scale(1) rotate(0deg);}
+    to{
+      transform: scale(1.1) rotate(15deg);}
 }
