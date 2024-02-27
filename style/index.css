@@ -37,7 +37,6 @@ body{
   justify-content: space-around;
   align-items: center;
 }
-
 li{
   list-style: none;
   font-family: "Montserrat", sans-serif;
@@ -90,7 +89,7 @@ li a:active{
 }
 .h1{
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   color: #6e2626;
   letter-spacing: 3px;
@@ -183,7 +182,6 @@ h3{
   font-weight: 400;
   margin-left: 10px;
 }
-
 .footer-img{
   max-width: 1360px;
   width: 100%;
@@ -202,7 +200,7 @@ h3{
   background-color: #FE1D60;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .Japan-img{
@@ -218,34 +216,45 @@ h3{
   50%{transform: scale(1.1) rotate(15deg);}
   100%{transform: scale(1) rotate(0deg);}
 }
-.Japan-img:hover{
+.Japan-img:hover , .New-york-img:hover{
   animation-play-state: paused;
-}
-.button-Japan{
-  background-color: #FFFFFF;
-  width: 170px;
-  height: 40px;
-  border: none;
-  border-radius: 3px;
-  color: #0a0000;
 }
 .Canada-img{
   max-width: 350px;
   width: 100%;
-  min-height: 272px;
+  min-height: 200px;
   height: 100%;
 }
 .New-york-img{
   animation: New-york-img 3.5s ease infinite;
   max-width: 350px;
   width: 100%;
-  min-height: 272px;
+  min-height: 200px;
+  height: 100%;
 }
-
-
-
 @keyframes New-york-img {
   0%{transform: scale(1) rotate(0deg);}
   50%{transform: scale(1.1) rotate(15deg);}
   100%{transform: scale(1) rotate(0deg);}
+}
+.button-Japan , .button-New-york , .button-Canada{
+  background-color: black;
+  width: 170px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  transition: background-color 0.15s , color 0.15s;
+}
+.button-Japan:hover , .button-Canada:hover , .button-New-york:hover{
+  background-color: #FFFFFF;
+  color: black;
+}
+.button-Japan:active , .button-Canada:active , .button-New-york:active{
+  background-color: black;
+  color: #FFFFFF;
 }
