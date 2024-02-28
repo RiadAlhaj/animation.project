@@ -5,7 +5,7 @@ body{
   height: 100%;
   margin: 0px;
   padding: 0px;
-  background-image: url(/images/background.jpg);
+  background-image: url("../images/background.jpg");
   background-size: 1440px 648px;
   background-repeat: no-repeat;
 }
@@ -208,10 +208,10 @@ h3{
   width: 100%;
   min-height: 200px;
   height: 100%;
-  animation: Japan 4.5s ease infinite;
+  animation: scaleAndTilt  4.5s ease infinite;
   animation-fill-mode: none;
 }
-@keyframes Japan {
+@keyframes scaleAndTilt{
   0%{transform: scale(1) rotate(0deg);}
   50%{transform: scale(1.1) rotate(15deg);}
   100%{transform: scale(1) rotate(0deg);}
@@ -226,13 +226,13 @@ h3{
   height: 100%;
 }
 .New-york-img{
-  animation: New-york-img 3.5s ease infinite;
+  animation: scaleAndTilt  3.5s ease infinite;
   max-width: 350px;
   width: 100%;
   min-height: 200px;
   height: 100%;
 }
-@keyframes New-york-img {
+@keyframes scaleAndTilt  {
   0%{transform: scale(1) rotate(0deg);}
   50%{transform: scale(1.1) rotate(15deg);}
   100%{transform: scale(1) rotate(0deg);}
